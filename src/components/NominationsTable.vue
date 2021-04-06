@@ -1,5 +1,5 @@
 <template>
-  <div class=" col-md-4 col-sm-12 col-xs-12 q-pt-md">
+  <div class="col-4 col-md-6 col-sm-12 col-xs-12 q-pa-md">
     <q-table
       title="Postulaciones"
       :data="this.$store.state.ontology.nominations"

@@ -1,6 +1,6 @@
-# Quasar App (ontology)
+# Quasar App (front-end)
 
-A Quasar Framework app
+Interfaz grafica para consumir la ontologia
 
 ## Install the dependencies
 ```bash
@@ -12,10 +12,6 @@ npm install
 quasar dev
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
 
 ### Build the app for production
 ```bash

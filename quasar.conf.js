@@ -5,8 +5,6 @@
 
 // Configuration for your app
 // https://v1.quasar.dev/quasar-cli/quasar-conf-js
-/* eslint-env node */
-const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = function (/* ctx */) {
   return {
@@ -21,7 +19,6 @@ module.exports = function (/* ctx */) {
     // https://v1.quasar.dev/quasar-cli/boot-files
     boot: [
       
-      'axios',
     ],
 
     // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -65,16 +62,15 @@ module.exports = function (/* ctx */) {
 
       // https://v1.quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack (chain) {
-        chain.plugin('eslint-webpack-plugin')
-          .use(ESLintPlugin, [{ extensions: [ 'js', 'vue' ] }])
+      chainWebpack (/* chain */) {
+        //
       },
     },
 
     // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
-      port: 8080,
+      port: 9090,
       open: true // opens browser window automatically
     },
 
@@ -116,7 +112,7 @@ module.exports = function (/* ctx */) {
       manifest: {
         name: `Quasar App`,
         short_name: `Quasar App`,
-        description: `A Quasar Framework app`,
+        description: `Interfaz grafica para consumir la ontologia`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -181,7 +177,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'ontology'
+        appId: 'front-end'
       },
 
       // More info: https://v1.quasar.dev/quasar-cli/developing-electron-apps/node-integration

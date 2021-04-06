@@ -1,5 +1,6 @@
 <template>
-  <div class="col q-pt-md">
+
+  <div class="col-4 col-md-6 col-sm-12 col-xs-12 q-pa-md">
     <q-card class="card-bg text-black">
       <q-card-section class="text-h6 ">
         <div class="text-h6">Perfil</div>

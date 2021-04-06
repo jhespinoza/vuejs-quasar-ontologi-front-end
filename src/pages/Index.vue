@@ -3,12 +3,12 @@
     <div class="row">
       <university-table />
       <careers-table />
-      <div class="col-3 col-md-4 col-sm-12 col-xs-12 q-pa-md">
-        <carrer-info />
+      <carrer-info />
+    </div>
+    <div class="row">
         <user-info />
         <nominations-table />
       </div>
-    </div>
   </q-page>
 </template>
 
